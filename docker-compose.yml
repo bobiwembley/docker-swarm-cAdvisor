@@ -32,8 +32,7 @@ services:
     deploy:
       mode: global
 networks:
-  frontend:
-  backend:
+  host:
 volumes:
   influx:
     driver: local

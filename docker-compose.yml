@@ -31,8 +31,12 @@ services:
        - influx
     deploy:
       mode: global
-networks:
-  host:
+ 
+ network:
+  default:
+    external: true
+    name: host
+
 volumes:
   influx:
     driver: local

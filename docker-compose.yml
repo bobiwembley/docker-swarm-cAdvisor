@@ -6,6 +6,8 @@ services:
       - influx:/var/lib/influxdb
     ports:    
       - "8086:8086"
+    networks:
+      - bridge
     deploy: 
       replicas: 1      
       placement:
